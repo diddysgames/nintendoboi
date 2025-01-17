@@ -1,4 +1,4 @@
-# this is a site i made because i was bored  ![eppy kitty](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6LGAHMZXZDIzJOfhzRp5WDz5JjIzGzgYpig&s)
+# I made a clone  ![eppy kitty](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6LGAHMZXZDIzJOfhzRp5WDz5JjIzGzgYpig&s)
 
 
 > # **Hi** [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fnintendoboi22.github.io%2Fpancake.pookie.apple%2F&count_bg=%23AF11F6&title_bg=%235C5C5C&icon=github.svg&icon_color=%23AF11F6&title=Views&edge_flat=false)](https://hits.seeyoufarm.com)
