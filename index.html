@@ -880,7 +880,7 @@
     function searchGames() {
         const input = document.querySelector('.search-bar');
         const filter = input.value.toUpperCase();
-        const games = document.querySelectorAll('.game-box');
+        const games = document.querySelectorAll('.game-link');
         games.forEach(game => {
             const gameName = game.innerText;
             if (gameName.toUpperCase().includes(filter)) {
