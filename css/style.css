@@ -37,10 +37,13 @@ h2 {
 
 .game-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* 3 buttons per row */
-    gap: 20px;
-    padding: 30px 10px;
-    justify-content: center; /* Center buttons horizontally */
+    grid-template-columns: repeat(3, 1fr); /* Force 3 buttons per row */
+    gap: 20px; /* Spacing between buttons */
+    justify-content: center; /* Center grid items */
+    align-items: center; /* Vertically align buttons */
+    padding: 30px;
+    max-width: 900px; /* Limit width of the container */
+    margin: 0 auto; /* Center container horizontally */
 }
 
 .game-link {
@@ -48,7 +51,7 @@ h2 {
     border-radius: 12px;
     padding: 20px;
     width: 120px; /* Thinner buttons */
-    height: 180px;
+    height: 160px; /* Adjusted height */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +95,7 @@ footer a:hover {
 
 @media (max-width: 600px) {
     .game-container {
-        grid-template-columns: 1fr; /* Full width on small screens */
+        grid-template-columns: 1fr; /* Single column layout on small screens */
     }
 
     .game-link {
