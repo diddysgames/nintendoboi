@@ -35,22 +35,20 @@ h2 {
     color: #333;
 }
 
-.game-link {
+.game-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 20px; /* Spacing between buttons */
-    justify-content: center; /* Center grid items */
-    align-items: center; /* Vertically align buttons */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px; /* Space between items */
     padding: 30px;
-    max-width: 100%; /* Use full width of the container */
-    margin: 0 auto; /* Center container horizontally */
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .game-link {
     background-color: #333;
     border-radius: 12px;
     padding: 20px;
-    height: 160px; /* Adjusted height */
+    height: 160px; /* Adjust height as needed */
     display: flex;
     justify-content: center;
     align-items: center;
