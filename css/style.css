@@ -37,10 +37,10 @@ h2 {
 
 .game-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid layout */
-    gap: 20px; /* Space between items */
-    justify-content: center; /* Center the grid items */
-    padding: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Smaller grid items */
+    gap: 15px; /* Reduced space between items */
+    justify-content: center;
+    padding: 20px;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -48,10 +48,10 @@ h2 {
 .game-link {
     background-color: #333;
     border-radius: 12px;
-    padding: 20px;
-    height: 160px; /* Adjust height as needed */
+    padding: 15px;
+    height: 120px; /* Smaller height */
     display: flex;
-    flex-direction: column; /* Ensure content stacks vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -65,7 +65,7 @@ h2 {
 }
 
 .game-title {
-    font-size: 1.2rem;
+    font-size: 1rem; /* Smaller font size */
     color: #f7ff3c;
     font-weight: bold;
     text-align: center;
@@ -74,8 +74,8 @@ h2 {
 
 .pin-button {
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 15px; /* Smaller size */
+    height: 15px; /* Smaller size */
     background-color: #ffd700;
     border-radius: 50%;
     margin-bottom: 10px;
@@ -107,14 +107,14 @@ footer a:hover {
 
 @media (max-width: 600px) {
     .game-grid {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Smaller grid items for narrow screens */
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); /* Smaller grid items for narrow screens */
     }
 
     .game-link {
-        height: 120px; /* Reduce height for small screens */
+        height: 100px; /* Further reduced height for small screens */
     }
 
     .game-title {
-        font-size: 1rem; /* Adjust font size */
+        font-size: 0.9rem; /* Adjust font size */
     }
 }
