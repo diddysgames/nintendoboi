@@ -42,7 +42,7 @@ h2 {
     justify-content: center; /* Center grid items */
     align-items: center; /* Vertically align buttons */
     padding: 30px;
-    max-width: 900px; /* Limit width of the container */
+    max-width: 100%; /* Use full width of the container */
     margin: 0 auto; /* Center container horizontally */
 }
 
