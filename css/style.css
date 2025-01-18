@@ -41,13 +41,14 @@ h2 {
     background-color: #333;
     border-radius: 12px;
     padding: 20px;
-    width: 200px;
+    width: 150px; /* Thinner buttons */
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s, background-color 0.3s;
+    border: 2px solid #f7ff3c;
 }
 .game-link:hover {
     transform: translateY(-5px);
@@ -77,33 +78,12 @@ footer a {
 footer a:hover {
     color: #f7ff3c;
 }
-.game-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 30px 10px;
-}
-.game-link {
-    background-color: #333;
-    border-radius: 12px;
-    padding: 20px;
-    width: 150px; /* Thinner buttons */
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s, background-color 0.3s;
-    border: 2px solid #f7ff3c;
-}
-
 @media (max-width: 600px) {
     .game-link {
         width: 100%; /* Full width on small screens */
     }
 }
-
 .game-container > .game-link {
-    flex: 1 1 30%; /* 3 buttons per row */
+    flex: 1 1 calc(33.33% - 40px); /* 3 buttons per row, considering gap */
+    margin: 10px; /* Ensure proper spacing */
 }
