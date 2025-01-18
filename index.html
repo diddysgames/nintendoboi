@@ -27,40 +27,15 @@
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2c0085" />
   <meta name="twitter:card" content="summary_large_image">
 </head>
-
 <body>
-    <!-- <div class="theme-switch-wrapper">
-        <label class="theme-switch" for="dkjgdr">
-            <input type="checkbox" id="asdsad" />
-            <div class="slider round"></div>
-        </label>
-    </div> -->
 
-    <div class="color-picker">
-        <label for="background-color"><strong>Background Color:</strong></label>
-        <input type="color" id="background-color" name="background-color" value="#f4f4f4">
-        <button id="reset-color">Reset</button>
-    </div><br>
-    <div style="display: flex; justify-content: space-between; align-items: center;">
-    <h3 style="position: absolute; left: 50%; transform: translateX(-50%);">(Panic Teacher Button, press <kbd>Q</kbd> key)</h3>
-    <a class="thoeswhoknow" href="https://github.com/Nintendoboi222/nintendoboi2222.github.io" style="margin-left: auto;">
-        <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fnintendoboi222%2Fnintendoboi222.github.io&count_bg=%23AD00FF&title_bg=%23555555&icon=github.svg&icon_color=%23AD00FF&title=Total+Visits&edge_flat=false"/>
-    </a>
-  </div>
-    <h1>Welcome</h1>
-    <h2>You've been here for <span id="time-counter"></span></h2>
-    <strong>
-        <div class="Index-Container">
-            <div>
-                <h1 onclick="splashText()" class="Index-SplashText">Enable Javascript Goofy</h1>
-            </div>
-        </div>
-    </strong>
-    <div class="search-container">
-        <input type="text" id="searchBar" onkeyup="searchgames()" placeholder="Search for some games I guess">
-    </div>
+<header>
+    <h1>Site 3 beta</h1>
+    <h2>Your Next Game?</h2>
+    <input type="text" class="search-bar" placeholder="Search here lil bro" onkeyup="searchGames()">
+</header>
 
-    <a href="https://nintendoboi22.github.io" target="_blank" >
+<a href="https://nintendoboi22.github.io" target="_blank" >
         <div class="game-link-other">To Nintendoboi22</div>
     </a>
     <div class="game-grid">
@@ -889,11 +864,8 @@
 
 
     </div>
-
-    <br>
-    <div class="center-content">
-        <footer>
-            <a href="https://nintendoboi2222.github.io/licence-stuff/contact" target="_blank">Contact</a>
+<footer>
+    <a href="https://nintendoboi2222.github.io/licence-stuff/contact" target="_blank">Contact</a>
             <a href="https://github.com/Nintendoboi22" id="main-github-link" target="_blank">Main Github</a>
             <a href="https://github.com/Nintendoboi2222" target="_blank">Org Github</a>
             <a href="https://nintendoboi2222.github.io/licence-stuff/PrivatePolicy" target="_blank">Privacy Policy</a>
@@ -901,57 +873,24 @@
             <a href="https://discord.gg/KAxqmAjTsm" target="_blank">Join the Discord?</a>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScReJwlA_ev-tzoljQP8tnEVhgM3ydTJ2WALhcsoNoWb33luA/viewform" target="_blank">Feedback</a>
             <a href="https://nintendoboi2222.github.io/games/credits" target="_blank">Credits</a>
-            <a href="https://nintendoboi222.github.io/games/Statuses" target="_blank">Game Statuses</a>  <!-- keep this one 222 because otherwise we need to change both and they run on the same files
-        </footer>
-    </div>
+            <a href="https://nintendoboi222.github.io/games/Statuses" target="_blank">Game Statuses</a>
+</footer>
 
-    <!-- <script>
-        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-
-        function switchTheme(e) {
-            if (e.target.checked) {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                localStorage.setItem('theme', 'dark');
+<script>
+    function searchGames() {
+        const input = document.querySelector('.search-bar');
+        const filter = input.value.toUpperCase();
+        const games = document.querySelectorAll('.game-box');
+        games.forEach(game => {
+            const gameName = game.innerText;
+            if (gameName.toUpperCase().includes(filter)) {
+                game.style.display = '';
             } else {
-                document.documentElement.setAttribute('data-theme', 'light');
-                localStorage.setItem('theme', 'light');
-            }    
-        }
-
-        toggleSwitch.addEventListener('change', switchTheme);
-
-        const currentTheme = localStorage.getItem('theme');
-        if (currentTheme) {
-            document.documentElement.setAttribute('data-theme', currentTheme);
-            if (currentTheme === 'dark') {
-                toggleSwitch.checked = true;
+                game.style.display = 'none';
             }
-        }
-
-        colorPicker.addEventListener('input', function(event) {
-            const backgroundColor = event.target.value;
-            document.documentElement.style.setProperty('--background-color', backgroundColor);
-
-            const brightness = calculateBrightness(backgroundColor);
-            if (brightness < 128) {
-                document.documentElement.style.setProperty('--text-color', '#ffffff');
-            } else {
-                document.documentElement.style.setProperty('--text-color', '#000000');
-            }
-
-            document.documentElement.style.setProperty('--game-link-bg', adjustColor(backgroundColor, -20));
-            document.documentElement.style.setProperty('--game-link-hover', adjustColor(backgroundColor, -10));
         });
-    </script> -->
+    }
+</script>
 
-<script src="/JS/jquery-3.7.1.min.js"></script>
-<script src="/JS/main.js"></script>
-<script src="/JS/Search.js"></script>
-<script src="/JS/timethingie.js"></script>
-<script src="/JS/titlestuff.js"></script>
-<script src="/JS/pin-system.js"></script>
 </body>
 </html>
-
-          
-
