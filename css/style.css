@@ -1,4 +1,5 @@
-  font-family: 'Oxanium', sans-serif;
+body {
+            font-family: 'Oxanium', sans-serif;
             background: linear-gradient(135deg, #4f4f9f, #222222);
             color: white;
             margin: 0;
