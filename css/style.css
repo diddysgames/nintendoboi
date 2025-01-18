@@ -6,20 +6,24 @@ body {
     padding: 0;
     text-align: center;
 }
+
 header {
     padding: 50px;
     background-color: rgba(0, 0, 0, 0.8);
 }
+
 h1 {
     font-size: 3rem;
     color: #f7ff3c;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
+
 h2 {
     color: #ffd700;
     font-size: 2rem;
 }
+
 .search-bar {
     margin-top: 20px;
     padding: 12px;
@@ -30,18 +34,20 @@ h2 {
     font-size: 1rem;
     color: #333;
 }
+
 .game-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* 3 buttons per row */
     gap: 20px;
     padding: 30px 10px;
+    justify-content: center; /* Center buttons horizontally */
 }
+
 .game-link {
     background-color: #333;
     border-radius: 12px;
     padding: 20px;
-    width: 130px; /* Thinner buttons */
+    width: 120px; /* Thinner buttons */
     height: 180px;
     display: flex;
     justify-content: center;
@@ -50,10 +56,12 @@ h2 {
     transition: transform 0.3s, background-color 0.3s;
     border: 2px solid #f7ff3c;
 }
+
 .game-link:hover {
     transform: translateY(-5px);
     background-color: #555;
 }
+
 a {
     text-decoration: none;
     color: #f7ff3c;
@@ -61,6 +69,7 @@ a {
     font-size: 1.2rem;
     text-align: center;
 }
+
 footer {
     background-color: #111;
     padding: 15px;
@@ -69,21 +78,24 @@ footer {
     bottom: 0;
     left: 0;
 }
+
 footer a {
     color: #ffd700;
     text-decoration: none;
     margin: 0 10px;
     font-size: 1rem;
 }
+
 footer a:hover {
     color: #f7ff3c;
 }
+
 @media (max-width: 600px) {
-    .game-link {
-        width: 100%; /* Full width on small screens */
+    .game-container {
+        grid-template-columns: 1fr; /* Full width on small screens */
     }
-}
-.game-container > .game-link {
-    flex: 1 1 calc(33.33% - 40px); /* 3 buttons per row, considering gap */
-    margin: 10px; /* Ensure proper spacing */
+
+    .game-link {
+        width: 100%; /* Full width buttons on small screens */
+    }
 }
