@@ -35,7 +35,7 @@ h2 {
     color: #333;
 }
 
-.game-container {
+.game-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Force 3 buttons per row */
     gap: 20px; /* Spacing between buttons */
