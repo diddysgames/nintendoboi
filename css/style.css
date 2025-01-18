@@ -36,7 +36,7 @@
             gap: 20px;
             padding: 30px 10px;
         }
-        .game-box {
+        .game-link {
             background-color: #333;
             border-radius: 12px;
             padding: 20px;
@@ -48,7 +48,7 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
             transition: transform 0.3s, background-color 0.3s;
         }
-        .game-box:hover {
+        .game-link:hover {
             transform: translateY(-5px);
             background-color: #555;
         }
