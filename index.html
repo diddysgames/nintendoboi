@@ -33,6 +33,14 @@
     <h1>Welcome to Nintendoboi2222</h1>
     <h2>Your Next Game?</h2>
     <input type="text" class="search-bar" placeholder="Search here lil bro" onkeyup="searchGames()">
+  <div class="theme-switcher">
+      <button onclick="setTheme('style.css')">Default</button>
+      <button onclick="setTheme('theme-blue.css')">Blue</button>
+      <button onclick="setTheme('theme-green.css')">Green</button>
+      <button onclick="setTheme('theme-gold.css')">Gold</button>
+      <button onclick="setTheme('theme-red.css')">Red</button>
+      <button onclick="setTheme('invisible-theme.css')">Invisible</button>
+    </div>
 </header>
 
 <a href="https://nintendoboi22.github.io" target="_blank" >
@@ -889,6 +897,13 @@
         });
     }
 </script>
+
+   <script>
+    function setTheme(themeName) {
+      const themeLink = document.getElementById('theme-link');
+      themeLink.href = `/css/${themeName}`;
+    }
+  </script>
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2812544090272940"
      crossorigin="anonymous"></script>
