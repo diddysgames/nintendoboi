@@ -6,7 +6,7 @@ document.addEventListener("keydown", (event) => {
         spaceCount++;
         clearTimeout(timeout);
 
-        if (spaceCount === 3) {
+        if (spaceCount === 6) {
             
             window.open("jambo.html", "_blank");
             spaceCount = 0; // Reset the count
