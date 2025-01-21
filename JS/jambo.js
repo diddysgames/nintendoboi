@@ -2,11 +2,11 @@ let spaceCount = 0;
 let timeout;
 
 document.addEventListener("keydown", (event) => {
-    if (event.code === "Space") {
+    if (event.code === "6") {
         spaceCount++;
         clearTimeout(timeout);
 
-        if (spaceCount === 6) {
+        if (spaceCount === 3) {
             
             window.open("jambo.html", "_blank");
             spaceCount = 0; // Reset the count
