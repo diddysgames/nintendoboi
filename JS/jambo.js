@@ -2,7 +2,7 @@ let spaceCount = 0;
 let timeout;
 
 document.addEventListener("keydown", (event) => {
-    if (event.code === "6") {
+    if (event.code === "Space") {
         spaceCount++;
         clearTimeout(timeout);
 
