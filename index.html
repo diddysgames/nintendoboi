@@ -900,10 +900,11 @@
 </script>
 
    <script>
-    function setTheme(themeName) {
-      const themeLink = document.getElementById('theme-link');
-      themeLink.href = `/css/${themeName}`;
-    }
+      function setTheme(themeName) {
+    const themeLink = document.getElementById('theme-link');
+    themeLink.href = `/css/${themeName}`;
+    setCookie('theme', themeName, 200);
+  }
   </script>
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2812544090272940"
