@@ -11,7 +11,8 @@ header {
     padding: 50px;
     background-color: white;
 }
-
+.themeButton { 
+    color: white;
 h1 {
     font-size: 3rem;
     color: white;
