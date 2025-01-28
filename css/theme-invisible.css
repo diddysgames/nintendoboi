@@ -5,31 +5,37 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    border: 1px solid white;
 }
 
 header {
     padding: 50px;
     background-color: white;
+    border-bottom: 2px solid white;
 }
 .bloeth { 
     color: white;
+    border: 1px solid white;
+}
 h1 {
     font-size: 3rem;
     color: white;
     text-transform: uppercase;
     letter-spacing: 3px;
+    border-bottom: 2px solid white;
 }
 
 h2 {
     color: white;
     font-size: 2rem;
+    border-bottom: 2px solid white;
 }
 
 .search-bar {
     margin-top: 20px;
     padding: 12px;
     border-radius: 8px;
-    border: none;
+    border: 2px solid white;
     width: 60%;
     max-width: 500px;
     font-size: 1rem;
@@ -40,7 +46,6 @@ h2 {
     color: white; 
 }
 
-
 .game-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
@@ -49,6 +54,7 @@ h2 {
     padding: 20px;
     max-width: 100%;
     margin: 0 auto;
+    border: 2px solid white;
 }
 
 .game-link {
@@ -76,6 +82,7 @@ h2 {
     font-weight: bold;
     text-align: center;
     margin-top: 10px;
+    border-bottom: 1px solid white;
 }
 
 .pin-button {
@@ -86,11 +93,13 @@ h2 {
     border-radius: 50%;
     margin-bottom: 10px;
     color: white;
+    border: 1px solid white;
 }
 
 a {
     text-decoration: none;
     color: white;
+    border-bottom: 1px solid white;
 }
 
 footer {
@@ -101,6 +110,7 @@ footer {
     width: 100%;
     bottom: 0;
     left: 0;
+    border-top: 2px solid white;
 }
 
 footer a {
@@ -108,6 +118,7 @@ footer a {
     text-decoration: none;
     margin: 0 10px;
     font-size: 1rem;
+    border-bottom: 1px solid white;
 }
 
 footer a:hover {
@@ -117,6 +128,7 @@ footer a:hover {
 @media (max-width: 600px) {
     .game-grid {
         grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        border: 1px solid white;
     }
 
     .game-link {
@@ -126,5 +138,6 @@ footer a:hover {
 
     .game-title {
         font-size: 0.9rem;
+        border-bottom: 1px solid white;
     }
 }
