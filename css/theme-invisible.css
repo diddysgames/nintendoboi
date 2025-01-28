@@ -37,7 +37,7 @@ h2 {
 }
 
 .search-bar::placeholder {
-    color: white; /* Makes the placeholder text completely white */
+    color: white; 
 }
 
 
@@ -95,6 +95,7 @@ a {
 
 footer {
     background-color: white;
+    color: white;
     padding: 15px;
     position: fixed;
     width: 100%;
@@ -120,6 +121,7 @@ footer a:hover {
 
     .game-link {
         height: 100px;
+        color: white;
     }
 
     .game-title {
