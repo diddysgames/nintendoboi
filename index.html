@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nintendoboi2222</title>
@@ -26,7 +26,7 @@
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="5500ff" />
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2c0085" />
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="/css/style.css" id="theme-link"> <!-- Default theme -->
+  <link rel="stylesheet" href="css/style.css" id="theme-link"> 
 </head>
 <body>
 
@@ -35,18 +35,21 @@
     <h2>Your Next Game?</h2>
     <input type="text" class="search-bar" placeholder="Search here lil bro" onkeyup="searchGames()">
   <div class="theme-switcher">
-      <button class="bloeth" onclick="setTheme('style.css')">Default</button>
-      <button class="bloeth" onclick="setTheme('theme-blue.css')">Blue</button>
-      <button class="bloeth" onclick="setTheme('theme-green.css')">Green</button>
-      <button class="bloeth" onclick="setTheme('theme-gold.css')">Gold</button>
-      <button class="bloeth" onclick="setTheme('theme-red.css')">Red</button>
-      <button class="bloeth" onclick="setTheme('theme-Kawaii.css')">Kawaii</button>
-      <button class="bloeth" onclick="setTheme('theme-invisible.css')">Best mode fr</button>
+      <button class="bloeth default" onclick="setTheme('style.css')">Default</button>
+      <button class="bloeth blue" onclick="setTheme('theme-blue.css')">Blue</button>
+      <button class="bloeth green" onclick="setTheme('theme-green.css')">Green</button>
+      <button class="bloeth gold" onclick="setTheme('theme-gold.css')">Gold</button>
+      <button class="bloeth red" onclick="setTheme('theme-red.css')">Red</button>
+      <button class="bloeth kawaii" onclick="setTheme('theme-Kawaii.css')">Kawaii</button>
+      <button class="bloeth invisible" onclick="setTheme('theme-invisible.css')">Best mode fr</button>
     </div>
 </header>
 
+<a href="https://nintendoboi22.github.io" target="_blank" >
+    <div class="game-link-other">To Nintendoboi22</div>
+    </a>
 <a href="https://nintendoboi222.github.io" target="_blank" >
-        <div class="game-link-other">To Nintendoboi222</div>
+    <div class="game-link-other">To Nintendoboi222</div>
     </a>
     <div class="game-grid">
        <a href="https://nintendoboi2222.github.io/games/awesome-tanks-2" target="_blank">
@@ -892,21 +895,31 @@
         games.forEach(game => {
             const gameName = game.innerText;
             if (gameName.toUpperCase().includes(filter)) {
-   game.style.display = '';
+                game.style.display = '';
             } else {
-   game.style.display = 'none';
+                game.style.display = 'none';
             }
         });
     }
 </script>
 
-   <script>
-      function setTheme(themeName) {
-    const themeLink = document.getElementById('theme-link');
-    themeLink.href = `/css/${themeName}`;
-    setCookie('theme', themeName, 200);
-  }
-  </script>
+<script>
+    function setTheme(themeName) {
+        const themeLink = document.getElementById('theme-link');
+        const body = document.body;
+        body.className = '';
+        if (themeName === 'theme-invisible.css') {
+            body.style.opacity = '0';
+        } else {
+            body.style.opacity = '1';
+        }
+        themeLink.href = `css/${themeName}`;
+        setCookie('theme', themeName, 200);
+
+        const themeClass = themeName.replace('.css', '');
+        body.classList.add(themeClass);
+    }
+</script>
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2812544090272940"
      crossorigin="anonymous"></script>
