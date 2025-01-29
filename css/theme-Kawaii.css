@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #ffd1dc, #ff9aa2);
+    background: linear-gradient(135deg, #ffd1dc, #ff9aa2, #ffdac1, #d1cfff, #b5e7a0);
     color: #fff;
     margin: 0;
     padding: 0;
@@ -50,7 +50,7 @@ h2 {
 }
 
 .game-link {
-    background-color: #ffe4e9;
+    background: linear-gradient(135deg, #ffe4e9, #ffdac1, #d1cfff);
     border-radius: 15px;
     padding: 15px;
     height: 120px;
@@ -90,7 +90,7 @@ a {
 }
 
 footer {
-    background-color: #ff9aa2;
+    background: linear-gradient(135deg, #ff9aa2, #ffdac1, #b5e7a0);
     padding: 15px;
     position: fixed;
     width: 100%;
