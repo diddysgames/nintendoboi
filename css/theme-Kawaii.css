@@ -1,7 +1,7 @@
 body {
-    font-family: 'Oxanium', sans-serif;
-    background: linear-gradient(135deg, #e4fffe, #222222);
-    color: white;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffd1dc, #ff9aa2);
+    color: #fff;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -9,30 +9,34 @@ body {
 
 header {
     padding: 50px;
-    background-color: rgba(0, 0, 64, 0.8);
+    background-color: rgba(255, 182, 193, 0.8);
+    border-bottom: 5px dashed #ff4d6d;
 }
 
 h1 {
     font-size: 3rem;
-    color: #00ccff;
+    color: #ff4d6d;
     text-transform: uppercase;
     letter-spacing: 3px;
+    text-shadow: 3px 3px 0 #fff;
 }
 
 h2 {
-    color: #0099cc;
+    color: #ff6b81;
     font-size: 2rem;
 }
 
 .search-bar {
     margin-top: 20px;
     padding: 12px;
-    border-radius: 8px;
+    border-radius: 12px;
     border: none;
     width: 60%;
     max-width: 500px;
     font-size: 1rem;
-    color: #333;
+    color: #ff4d6d;
+    background-color: #fff5f8;
+    box-shadow: 0 0 10px rgba(255, 182, 193, 0.5);
 }
 
 .game-grid {
@@ -46,27 +50,27 @@ h2 {
 }
 
 .game-link {
-    background-color: #222222;
-    border-radius: 12px;
+    background-color: #ffe4e9;
+    border-radius: 15px;
     padding: 15px;
     height: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.5);
     transition: transform 0.3s, background-color 0.3s;
-    border: 2px solid #00ccff;
+    border: 2px dashed #ff4d6d;
 }
 
 .game-link:hover {
     transform: translateY(-5px);
-    background-color: #4f4f9f;
+    background-color: #ffb6c1;
 }
 
 .game-title {
     font-size: 1rem;
-    color: #00ccff;
+    color: #ff4d6d;
     font-weight: bold;
     text-align: center;
     margin-top: 10px;
@@ -76,7 +80,7 @@ h2 {
     display: block;
     width: 15px;
     height: 15px;
-    background-color: #0099cc;
+    background-color: #ff6b81;
     border-radius: 50%;
     margin-bottom: 10px;
 }
@@ -86,23 +90,24 @@ a {
 }
 
 footer {
-    background-color: #111;
+    background-color: #ff9aa2;
     padding: 15px;
     position: fixed;
     width: 100%;
     bottom: 0;
     left: 0;
+    border-top: 5px dashed #ff4d6d;
 }
 
 footer a {
-    color: #0099cc;
+    color: #ff4d6d;
     text-decoration: none;
     margin: 0 10px;
     font-size: 1rem;
 }
 
 footer a:hover {
-    color: #00ccff;
+    color: #fff;
 }
 
 @media (max-width: 600px) {
