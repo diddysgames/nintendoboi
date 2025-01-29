@@ -175,7 +175,7 @@ button.bloeth:active {
 
 .theme-switcher button.default:hover,
 .theme-switcher button.default:active {
-    background-color: #ffd700;
+    background-color: gray;
     color: #665500cc;
 }
 
