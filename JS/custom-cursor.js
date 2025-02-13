@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const img = document.createElement("img");
-    img.src = "images/Bloxy-Icon.png"; // Updated image path
+    img.src = "images/Bloxy-Icon.png";
     img.style.position = "absolute";
     img.style.pointerEvents = "none";
     img.style.transform = "translate(-50%, -50%)";
@@ -10,22 +10,25 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.appendChild(img);
 
     document.body.style.cursor = "none";
+    document.querySelectorAll("a, button, input, [role='button']").forEach(element => {
+        element.style.cursor = "none";
+    });
 
     let mouseX = 0;
     let mouseY = 0;
 
     document.addEventListener("mousemove", (e) => {
         mouseX = e.clientX;
-        mouseY = e.clientY + window.scrollY; // Update mouse position with scroll
+        mouseY = e.clientY + window.scrollY;
     });
 
     function updateCursorImage() {
         img.style.left = `${mouseX}px`;
         img.style.top = `${mouseY}px`;
-        requestAnimationFrame(updateCursorImage); // Keep updating the position
+        requestAnimationFrame(updateCursorImage);
     }
 
-    updateCursorImage(); // Start the position correction loop
+    updateCursorImage();
 
     document.querySelectorAll("a, button, input, [role='button']").forEach(element => {
         element.addEventListener("mouseenter", () => {
