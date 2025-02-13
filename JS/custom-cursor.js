@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const img = document.createElement("img");
-    img.src = "https://i.postimg.cc/0N4wBx90/Bloxy-Icon.webp";
+    img.src = "images/Bloxy-Icon.png"; // Updated image path
     img.style.position = "absolute";
     img.style.pointerEvents = "none";
     img.style.transform = "translate(-50%, -50%)";
