@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const img = document.createElement("img");
-    img.src = "https://static.wikia.nocookie.net/tc2/images/b/bd/Bloxy_Cola.png/revision/latest/thumbnail/width/360/height/450?cb=20240713063959"; 
+    img.src = "https://iili.io/2m85zq7.webp"; 
     img.style.position = "absolute";
     img.style.pointerEvents = "none"; 
     img.style.transform = "translate(-50%, -50%)"; 
