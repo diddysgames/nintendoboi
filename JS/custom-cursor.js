@@ -13,8 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.addEventListener("mousemove", (e) => {
         img.style.left = `${e.clientX}px`;
-        img.style.top = `${e.clientY}px`;
+        img.style.top = `${e.clientY + window.scrollY}px`; // Adjust top for scrolling
         img.style.display = "block";
+    });
+
+    document.addEventListener("scroll", () => {
+        // Adjust image position on scroll
+        img.style.top = `${parseFloat(img.style.top) + window.scrollY}px`;
     });
 
     document.querySelectorAll("a, button, input, [role='button']").forEach(element => {
