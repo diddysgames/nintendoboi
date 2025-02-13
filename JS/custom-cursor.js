@@ -9,9 +9,12 @@ document.addEventListener("DOMContentLoaded", function () {
     img.style.transition = "transform 0.1s linear";
     document.body.appendChild(img);
 
-    document.body.style.cursor = "none";
-    document.querySelectorAll("a, button, input, [role='button']").forEach(element => {
-        element.style.cursor = "none";
+    document.body.style.cursor = "none"; // Hide all cursors
+
+    const clickableElements = document.querySelectorAll("a, button, input, [role='button'], textarea, select");
+
+    clickableElements.forEach(element => {
+        element.style.cursor = "none"; // Hide cursor for clickable and typeable elements
     });
 
     let mouseX = 0;
