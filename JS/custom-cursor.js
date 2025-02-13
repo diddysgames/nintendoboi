@@ -11,16 +11,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.body.style.cursor = "none";
 
+    let mouseX = 0;
+    let mouseY = 0;
+
     document.addEventListener("mousemove", (e) => {
-        img.style.left = `${e.clientX}px`;
-        img.style.top = `${e.clientY + window.scrollY}px`; // Adjust top for scrolling
-        img.style.display = "block";
+        mouseX = e.clientX;
+        mouseY = e.clientY + window.scrollY; // Update mouse position with scroll
     });
 
-    document.addEventListener("scroll", () => {
-        // Adjust image position on scroll
-        img.style.top = `${parseFloat(img.style.top) + window.scrollY}px`;
-    });
+    function updateCursorImage() {
+        img.style.left = `${mouseX}px`;
+        img.style.top = `${mouseY}px`;
+        requestAnimationFrame(updateCursorImage); // Keep updating the position
+    }
+
+    updateCursorImage(); // Start the position correction loop
 
     document.querySelectorAll("a, button, input, [role='button']").forEach(element => {
         element.addEventListener("mouseenter", () => {
