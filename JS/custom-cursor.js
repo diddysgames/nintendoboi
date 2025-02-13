@@ -33,12 +33,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.querySelectorAll("iframe").forEach(iframe => {
         iframe.addEventListener("mouseenter", () => {
-            img.style.left = "-100px";
-            img.style.top = "-100px";
+            img.style.display = "none";
         });
-        iframe.addEventListener("mouseleave", (e) => {
-            img.style.left = `${e.clientX}px`;
-            img.style.top = `${e.clientY}px`;
+        iframe.addEventListener("mouseleave", () => {
+            img.style.display = "block";
         });
     });
 });
