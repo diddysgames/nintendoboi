@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.addEventListener("mousemove", (e) => {
         img.style.left = `${e.clientX}px`;
         img.style.top = `${e.clientY}px`;
+        img.style.display = "block";
     });
 
     document.querySelectorAll("a, button, input, [role='button']").forEach(element => {
@@ -32,10 +33,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.querySelectorAll("iframe").forEach(iframe => {
         iframe.addEventListener("mouseenter", () => {
-            img.style.display = "none";
+            img.style.left = "-100px";
+            img.style.top = "-100px";
         });
-        iframe.addEventListener("mouseleave", () => {
-            img.style.display = "block";
+        iframe.addEventListener("mouseleave", (e) => {
+            img.style.left = `${e.clientX}px`;
+            img.style.top = `${e.clientY}px`;
         });
     });
 });
