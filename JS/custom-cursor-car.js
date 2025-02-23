@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const img = document.createElement("img");
-    img.src = "images/Car-Icon.png";
+    img.src = "images/Car-Cursor.png";
     img.style.position = "absolute";
     img.style.pointerEvents = "none";
     img.style.transform = "translate(-50%, -50%)";
