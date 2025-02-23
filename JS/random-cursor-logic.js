@@ -1,6 +1,6 @@
  const jsFiles = [
-            "JS/custom-cursor-bloxy.js",
-            "JS/custom-cursor-car.js"
+            "images/custom-cursor-bloxy.js",
+            "images/custom-cursor-car.js"
            
         ];
 
