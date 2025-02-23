@@ -1,0 +1,22 @@
+ const jsFiles = [
+            "JS/custom-cursor-bloxy.js",
+            "JS/custom-cursor-car.js",
+            "JS/custom-cursor-cat.js"
+           
+        ];
+
+        // Function to randomly select a JavaScript file
+        function getRandomJsFile() {
+            const randomIndex = Math.floor(Math.random() * jsFiles.length);
+            return jsFiles[randomIndex];
+        }
+
+        // Dynamically create a script tag with the randomly selected JavaScript file
+        function loadRandomJsFile() {
+            const script = document.createElement("script");
+            script.src = getRandomJsFile();
+            document.head.appendChild(script);
+        }
+
+        // Load the random JavaScript file when the page loads
+        window.onload = loadRandomJsFile;
